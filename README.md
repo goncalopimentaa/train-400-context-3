@@ -7,7 +7,7 @@
 [![CI](https://github.com/toy-gpt/train-400-context-3/actions/workflows/ci-python-mkdocs.yml/badge.svg?branch=main)](https://github.com/toy-gpt/train-400-context-3/actions/workflows/ci-python-mkdocs.yml)
 [![Deploy-Docs](https://github.com/toy-gpt/train-400-context-3/actions/workflows/deploy-mkdocs.yml/badge.svg?branch=main)](https://github.com/toy-gpt/train-400-context-3/actions/workflows/deploy-mkdocs.yml)
 [![Check Links](https://github.com/toy-gpt/train-400-context-3/actions/workflows/links.yml/badge.svg)](https://github.com/toy-gpt/train-400-context-3/actions/workflows/links.yml)
-[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/toy-gpt/train-400-context-3/security/dependabot)
+[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/toy-gpt/train-400-context-3/security)
 
 > Demonstrates, at very small scale, how a language model is trained.
 
