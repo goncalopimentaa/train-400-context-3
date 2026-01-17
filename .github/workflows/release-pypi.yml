@@ -133,13 +133,17 @@ jobs:
 
       # === DOCS (MIKE VERSIONED DOCS) ===
 
-      - name: D8) Configure git identity for mike
+      - name: D8) Fetch organization MkDocs base config
+        if: hashFiles('mkdocs.yml', 'mkdocs.yaml') != ''
+        run: curl -o mkdocs.base.yaml https://raw.githubusercontent.com/toy-gpt/.github/refs/heads/main/docs-theme/mkdocs.base.yaml
+
+      - name: D9) Configure git identity for mike
         if: hashFiles('mkdocs.yml', 'mkdocs.yaml') != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: D9) Deploy docs for this version and update latest alias
+      - name: D10) Deploy docs for this version and update latest alias
         if: hashFiles('mkdocs.yml', 'mkdocs.yaml') != ''
         run: |
           set -e
@@ -148,6 +152,6 @@ jobs:
           uv run mike deploy --push --update-aliases "$VERSION" latest
           uv run mike set-default --push latest
 
-      - name: D10) Show mike versions (after)
+      - name: D11) Show mike versions (after)
         if: hashFiles('mkdocs.yml', 'mkdocs.yaml') != ''
         run: uv run mike list
